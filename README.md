@@ -87,8 +87,8 @@
 > ## Links
 >> | | **Deployed Sites** | **Repositories** |
 >> |--|--|--|
->> | Front End App: | [appUrl](appUrl) | [appRepositoryUrl](appRepositoryUrl)|
->> | Database App | [dbUrl](dbUrl) | [dbRepositoryUrl](dbRepositoryUrl) |
+>> | Front End App: | [appUrl](appUrl) | [DjangoFinanceApi](https://github.com/mmmoore1313/DjangoFinanceApi) |
+>> | Database App | [dbUrl](dbUrl) | [DjangoFinanceApi](https://github.com/mmmoore1313/DjangoFinanceApi) |
 >
 > ###### [(Return to top)](https://github.com/mmmoore1313/DjangoFinanceApi#wheres-my-money)
 >

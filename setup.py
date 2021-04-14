@@ -14,13 +14,13 @@ with open('LICENSE.md') as f:
     LICENSE = f.read()
 
 setup(
-    name='django-auth-template',
+    name='DjangoFinanceApi',
     version='0.1.0',
-    description='GA SEI Boston Django Authentication Template',
+    description='An api based on the django template provided by General Assembly',
     long_description=README,
-    author='<author>',
-    author_email='<email>',
-    url='https://git.generalassemb.ly/ga-wdi-boston/django-auth-template',
+    author='Matt Moore',
+    author_email='Matt.M.Moore13@outlook.com',
+    url='https://github.com/mmmoore1313/DjangoFinanceApi',
     license=LICENSE,
     packages=find_packages(exclude=('tests', 'docs'))
 )
