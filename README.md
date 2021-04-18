@@ -15,7 +15,7 @@
 >> ### Auth Routes 
 >>> | HTTP Method | URL Path | Action | CRUD |
 >>> |--|--|--|--|
->>> | POST |  | create | (C)reate |
+>>> | POST | /sign-up/ | create | (C)reate |
 >>> | GET |  | index or list | (R)ead |
 >>> | GET |  | show or retrieve | (R)ead |
 >>> | PATCH |  | update | (U)pdate |
@@ -24,8 +24,8 @@
 >>> #### Curl-Scripts
 >>> | Action | JSON | Command | Success | Failure | 
 >>> |--|--|--|--|--|
->>> |  |  |  | `201 Created` | `401 Not Found` |
->>> |  |  |  | `201 Created` | `401 Not Found` |
+>>> | sign-up | ``'{ '"credentials": { "email": "'"${EMAIL}"'", "password": "'"${PASSWORD}"'", "password_confirmation": "'"${PASSWORD}"'" } }'`` | ``EMAIL='musthave@and.com' PASSWORD='bemorethan5' PASSWORD='bemorethan5' sh curl-scripts/auth/sign-up.sh``| `201 Created` | `401 Not Found` |
+>>> | sign-in | ``'{ "credentials": { "email": "'"${EMAIL}"'", "password": "'"${PASSWORD}"'" } }'`` | ``EMAIL='musthave@and.com' PASSWORD='bemorethan5' sh curl-scripts/auth/sign-in.sh`` | `201 Created` | `401 Not Found` |
 >>> |  |  |  | `201 Created` | `401 Not Found` |
 >>> |  |  |  | `201 Created` | `401 Not Found` |
 >>
@@ -35,19 +35,20 @@
 >> ### Other Routes 
 >>> | HTTP Method | URL Path | Action | CRUD |
 >>> |--|--|--|--|
->>> | POST |  | create | (C)reate |
->>> | GET |  | index or list | (R)ead |
->>> | GET |  | show or retrieve | (R)ead |
+>>> | POST | /accounts/ | create | (C)reate |
+>>> | GET | /accounts/ | index or list | (R)ead |
+>>> | GET | /accounts/:id | show or retrieve | (R)ead |
 >>> | PATCH |  | update | (U)pdate |
->>> | DELETE |  | destroy | (D)elete |
+>>> | DELETE | /accounts/:id | destroy | (D)elete |
 >>>
 >>> #### Curl-Scripts
 >>> | Action | JSON | Command | Success | Failure | 
 >>> |--|--|--|--|--|
->>> |  |  |  | `201 Created` | `401 Not Found` |
->>> |  |  |  | `201 Created` | `401 Not Found` |
->>> |  |  |  | `201 Created` | `401 Not Found` |
->>> |  |  |  | `201 Created` | `401 Not Found` |
+>>> | create account | ``'{ "account": { "name": "'"${NAME}"'", "type": "'"${TYPE}"'", "value": "'"${VALUE}"'" } }'`` | ``TOKEN='<token>' NAME='<accntName>' TYPE='accntType' VALUE='<NumberWithTwoDecimals' sh curl-scripts/accounts/create.sh`` | `201 Created` | `401 Not Found` |
+>>> | index accounts |  | ``TOKEN='<token>' sh curl-scripts/accounts/index.sh`` | `200 OK` | `401 Not Found` |
+>>> | show account |  | ``TOKEN='<token>' ID='<accountID>' sh curl-scripts/accounts/show.sh`` | `200 OK` | `404 Not Found` |
+>>> | update account | ``'{ "account": { "name": "'"${NAME}"'", "type": "'"${TYPE}"'", "value": "'"${VALUE}"'" } }'`` | ``TOKEN='<token>' ID='<accountID>' NAME='<accntName>' TYPE='accntType' VALUE='<NumberWithTwoDecimals' sh curl-scripts/accounts/update.sh`` | `200 OK` | `400 Bad Request` |
+>>> | delete account |  | ``TOKEN='<token>' ID='<accountID>' sh curl-scripts/accounts/delete.sh`` | `201 Created` | `401 Not Found` |
 >
 > ###### [(Return to top)](https://github.com/mmmoore1313/DjangoFinanceApi#wheres-my-money)
 >
