@@ -55,6 +55,12 @@ class AccountDetail(generics.RetrieveUpdateDestroyAPIView):
         if not request.user.id == account.owner.id:
             raise PermissionDenied('Why are ye tryin to pick your buddys nose?')
         request.data['account']['owner'] = request.user.id
+        if not request.data['account']['name']:
+            request.data['account']['name'] = account.name
+        if not request.data['account']['type']:
+            request.data['account']['type'] = account.type
+        if not request.data['account']['amount']:
+            request.data['account']['amount'] = account.amount
         data = AccountSerializer(account, data=request.data['account'], partial=True)
         if data.is_valid():
             data.save()
