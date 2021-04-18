@@ -1,3 +1,5 @@
+# EMAIL='musthave@and.com' PASSWORD='bemorethan5' PASSWORD='bemorethan5' sh curl-scripts/auth/sign-up.sh
+
 curl "http://localhost:8000/sign-up/" \
   --include \
   --request POST \
@@ -9,3 +11,5 @@ curl "http://localhost:8000/sign-up/" \
       "password_confirmation": "'"${PASSWORD}"'"
     }
   }'
+
+echo
