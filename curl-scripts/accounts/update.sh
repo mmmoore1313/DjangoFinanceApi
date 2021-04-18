@@ -10,7 +10,7 @@ curl "http://localhost:8000/accounts/${ID}/" \
     "account": {
       "name": "'"${NAME}"'",
       "type": "'"${TYPE}"'",
-      "value": "'"${VALUE}"'"
+      "amount": "'"${AMOUNT}"'"
     }
   }'
 
