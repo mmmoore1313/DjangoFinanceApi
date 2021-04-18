@@ -16,17 +16,16 @@
 >>> | HTTP Method | URL Path | Action | CRUD |
 >>> |--|--|--|--|
 >>> | POST | /sign-up/ | create | (C)reate |
->>> | GET |  | index or list | (R)ead |
->>> | GET |  | show or retrieve | (R)ead |
->>> | PATCH |  | update | (U)pdate |
->>> | DELETE |  | destroy | (D)elete |
+>>> | GET | /sign-in/ | show or retrieve | (R)ead |
+>>> | PATCH | /change-password/ | update | (U)pdate |
+>>> | DELETE | /sign-out/ | destroy | (D)elete |
 >>>
 >>> #### Curl-Scripts
 >>> | Action | JSON | Command | Success | Failure | 
 >>> |--|--|--|--|--|
 >>> | sign-up | ``'{ '"credentials": { "email": "'"${EMAIL}"'", "password": "'"${PASSWORD}"'", "password_confirmation": "'"${PASSWORD}"'" } }'`` | ``EMAIL='musthave@and.com' PASSWORD='bemorethan5' PASSWORD='bemorethan5' sh curl-scripts/auth/sign-up.sh``| `201 Created` | `401 Not Found` |
 >>> | sign-in | ``'{ "credentials": { "email": "'"${EMAIL}"'", "password": "'"${PASSWORD}"'" } }'`` | ``EMAIL='musthave@and.com' PASSWORD='bemorethan5' sh curl-scripts/auth/sign-in.sh`` | `201 Created` | `401 Not Found` |
->>> |  |  |  | `201 Created` | `401 Not Found` |
+>>> | change-password | ``'{ "passwords": { "old": "'"${OLDPW}"'", "new": "'"${NEWPW}"'" } }'`` | ``TOKEN=<token> OLDPW=<oldPW> NEWPW=<newPW> sh curl-scripts/auth/change-pw.sh`` | `201 Created` | `401 Not Found` |
 >>> |  |  |  | `201 Created` | `401 Not Found` |
 >>
 >>
