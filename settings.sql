@@ -1,2 +1,2 @@
-DROP DATABASE IF EXISTS django_auth_template;
-CREATE DATABASE django_auth_template;
+DROP DATABASE IF EXISTS django_finance_app;
+CREATE DATABASE django_finance_app;
