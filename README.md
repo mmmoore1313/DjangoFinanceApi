@@ -5,7 +5,6 @@
 > | [About](https://github.com/mmmoore1313/DjangoFinanceApi#about-app) | [Technologies Used](https://github.com/mmmoore1313/DjangoFinanceApi#technologies-employed) |
 > | [Routes](https://github.com/mmmoore1313/DjangoFinanceApi#catalogue-of-routes) | [Future Iterations](https://github.com/mmmoore1313/DjangoFinanceApi#future-iterations) |
 > |[ERD](https://github.com/mmmoore1313/DjangoFinanceApi#entity-relationship-diagram-or-wireframe) | [Links](https://github.com/mmmoore1313/DjangoFinanceApi#links) |
-> | [Planning](https://github.com/mmmoore1313/DjangoFinanceApi#planning) |  |
 >
 >
 > ## About App
@@ -54,27 +53,21 @@
 > ## Entity Relationship Diagram
 > ![ERD](https://media.git.generalassemb.ly/user/33705/files/cb2ee980-9c53-11eb-9539-137e2c2bd992)
 >
-> ### snapshot of app
->
-> ###### [(Return to top)](https://github.com/mmmoore1313/DjangoFinanceApi#wheres-my-money)
->
-> ## Planning
->> <!-- Desctiption -->
->>
->>> |  | **Day 1:** | **Day 2:** | **...**
->>> |--|--|--|--|
->>> | Description | <!-- Description --> | <!-- Description --> | <!-- Description --> |
->>> | [Teamate]() | <!-- What they did --> | <!-- What they did -->  | <!-- What they did -->  |
->>> | [Teamate]() | <!-- What they did --> | <!-- What they did -->  | <!-- What they did -->  |
->
 >
 > ###### [(Return to top)](https://github.com/mmmoore1313/DjangoFinanceApi#wheres-my-money)
 >
 > ## Technologies Employed
 >> | **General Development** | **[Client](https://github.com/mmmoore1313/WheresMyMoney-client) Development** | **[API](https://github.com/mmmoore1313/DjangoFinanceApi) Development** | **Deployment** |
 >> |--|--|--|--|
->> | [Technology Name](docs) | [Technology Name](docs) | [Technology Name](docs) | [Technology Name](docs) |
->
+>> | [GitHub](https://github.com/) | [React](https://reactjs.org/) | [Express](https://expressjs.com) | [GH Pages](https://pages.github.com/) |
+>> | [Atom](https://atom.io/) | [React-Bootstrap](https://react-bootstrap.github.io/) | [Postman](https://www.postman.com/) | [Heroku](https://www.heroku.com) |
+>> | [VS Code](https://code.visualstudio.com/) | [Semantic UI React](https://react.semantic-ui.com/) | [Django](https://docs.djangoproject.com/en/3.2/) | |
+>> | [GoogleSheets](https://docs.google.com/spreadsheets/d/1kJRGhsgKEV9xVL3lXtyz6cqBWf14lm6JuXD02uneldA/edit#gid=0) | | | |
+>> | [Google](https://www.google.com/) | | | |
+>> | [MDN Web Docs](https://developer.mozilla.org/en-US/) | | | |
+>> | [JavaScript](https://www.javascript.com/) | | | |
+>> | [CSS](https://www.w3schools.com/css/) | | | |
+>> | [SCSS](https://sass-lang.com/) | | | |
 >
 > ###### [(Return to top)](https://github.com/mmmoore1313/DjangoFinanceApi#wheres-my-money)
 >
