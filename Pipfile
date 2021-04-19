@@ -12,7 +12,7 @@ python-dotenv = "*"
 dj-database-url = "*"
 django = "==3.0"
 gunicorn = "*"
-whitenoise = "*"
+whitenoise = {extras = ["brotli"], version = "*"}
 
 [requires]
 python_version = "3.8"
